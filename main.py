@@ -32,7 +32,7 @@ def login(email: str= Form(...,description="Enter your Email") , password:str= F
     for u in users:
         if u["email"] == user.email and u["password"] == user.password:
             return {"message": "Login successful"}
-    return {"error": "Invalid"}
+    return {"error": "Invalid user"}
 
 
 
